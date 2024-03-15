@@ -44,3 +44,18 @@ const returnMultipleLines = () => (
     This is a multiline string
     <p>`
 )
+
+// No spread operator
+let arr1 = [1,2,3];
+let arr2 = arr1;
+arr2.push(4);
+console.log('2nd array:', arr2);
+console.log('1st array:' arr1);
+
+// Copying an array
+let arr3 = [5,6,7];
+let arr4 = [...arr3];
+
+arr4.push(7);
+console.log('3rd array:' arr3);
+console.log('4th array:' arr4);
