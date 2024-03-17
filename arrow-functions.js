@@ -105,3 +105,61 @@
 // console.log("Sum14: ", sum14);
 
 
+//Destructuring Arrays
+
+let ages = [30, 26, 27];
+// let john = ages[0];
+// let mary = ages[1];
+// let joe = ages[2];
+
+let [john, mary, joe] = ages;
+
+console.log(john, mary, joe)
+//Destructuring Objects
+
+let jobs = {
+    mike: "designer",
+    jill: "developer",
+    alicia: "accountant",
+};
+let {mike, jill, alicia} = jobs;
+console.log(mike, jill, alicia);
+
+//Destructuring Subsets
+
+let languages = ["english", "french", "german", "japanese"];
+let [,johnNative, ,johnSecondary] = languages;
+console.log(johnNative, johnSecondary);
+
+let lang = {
+    firstL:"english",
+    secondL:"french",
+    thirdL:"german",
+    fourthL:"japanes",
+};
+
+let {firstL, thirdL} = lang
+console.log(firstL, thirdL)
+
+//Using rest parameter syntax
+
+let fruits = ["apple", "orange", "banana", "peach", "cherry"];
+let [favorite, secondfavorite, ...others] = fruits;
+
+console.log(favorite)
+console.log(secondfavorite)
+console.log(others)
+
+let favoriteFoods = {
+    brian:"pizza",
+    anna:"pasta",
+    sarah:"vegetarian",
+    andrea:"steak",
+};
+
+let {brian, anna, ...rest} = favoriteFoods;
+
+console.log(brian)
+console.log(anna)
+console.log(rest)
+
